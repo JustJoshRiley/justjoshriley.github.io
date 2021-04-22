@@ -14,5 +14,5 @@ let myInfo = new TypeIt('#myStats', {
 .type('Click around and be curious, I hope something here inspires you.')
 .break()
 .break()
-.type('- JWR')
+.type('- J.W.R')
 .go();
