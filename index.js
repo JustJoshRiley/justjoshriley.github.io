@@ -1,3 +1,4 @@
+
 let myInfo = new TypeIt('#myStats', {
     speed: 50
 })
@@ -30,3 +31,14 @@ themeSelector.addEventListener("change", () => {
 });
 
 setTheme();
+
+if (window.matchMedia("(prefers-color-scheme: dark)").matches == true){
+    themeSelector.value = 'dark'
+    let theme = themeSelector.value
+    themeLink.setAttribute("href", "theme-" + theme + ".css")
+    setTheme()
+}
+else {
+
+}
+
