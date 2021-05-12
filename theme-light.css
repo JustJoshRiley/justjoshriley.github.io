@@ -79,8 +79,9 @@ svg:hover {
     font-size: 10vh;
 }
 #menu:hover {
-    transition: ease-in .25s;
-    color: hotpink;
-    text-shadow: 2px 2px #000000;
+    cursor: pointer;
+    transition: ease .5s;
+    color: #D00000;
+    border-bottom: solid;
 }
 
