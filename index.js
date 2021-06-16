@@ -17,9 +17,33 @@ let myInfo = new TypeIt('#myStats', {
 .type('- J.W.R')
 .go();
 
+const body = document.getElementById('body')
+body.addEventListener('keydown', (event) => {
+    console.log(event.key);
+    if (event.key == "j" || event.key == "J") {
+       const J = document.getElementsByClassName('menuj')[0];
+       J.click();
+    }
+    else if (event.key == 'w' || event.key == 'W') {
+        const W = document.getElementsByClassName('menuw')[0];
+        W.click();
+    }
+    else if (event.key == 'r' || event.key == 'R') {
+        const R = document.getElementsByClassName('menur')[0];
+        R.click();
+    }
+    // else if (event.key ==' ') {
+    //     alert('space was clicked');
+    // }
+    else {
+        
+    }
+
+
+})
+
 const themeSelector = document.querySelector("#themes");
 const themeLink = document.querySelector(".theme");
-
 
 function setTheme() {
     let theme = themeSelector.value;
@@ -38,7 +62,5 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches == true){
     themeLink.setAttribute("href", "theme-" + theme + ".css")
     setTheme()
 }
-else {
-
-}
+else {}
 
