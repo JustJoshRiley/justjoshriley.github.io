@@ -43,11 +43,11 @@ h6 {
 }
 select option {
     color: hotpink;
-    background-color: #91818A;
+    background-color: #E76B74
 }
 .themes {
     outline: none;
-    background-color: #91818A;
+    background-color: #E76B74
 }
 .modal-header h6 {
     padding-bottom: 4%;
@@ -57,7 +57,7 @@ select option {
     background-color: #D00000;
 }
 span {
-    color: #91818A;
+    color: #6B818C;
 
 }
 .modal-content {
