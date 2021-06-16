@@ -32,6 +32,9 @@ h6 {
     margin-top: 4%;
     margin-bottom: 0;
 }
+h5 {
+    margin-left: -1%;
+}
 .navigation-secret {
     display: none;
 }
@@ -81,7 +84,7 @@ svg:hover {
 #menu:hover {
     cursor: pointer;
     transition: ease .5s;
-    color: #D00000;
+    color: #E76B74;
     border-bottom: solid;
 }
 
