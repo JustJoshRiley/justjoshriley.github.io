@@ -2,7 +2,7 @@
 let myInfo = new TypeIt('#myStats', {
     speed: 50
 })
-.type('Hey there!')
+.type('Hello there!')
 .break()
 .break()
 .type('My name is Joshua Riley. I\'m a <em> Computer Science </em>student at <em>Make School</em> in San Francisco.')
@@ -56,11 +56,22 @@ themeSelector.addEventListener("change", () => {
 
 setTheme();
 
-if (window.matchMedia("(prefers-color-scheme: dark)").matches == true){
-    themeSelector.value = 'dark'
-    let theme = themeSelector.value
-    themeLink.setAttribute("href", "theme-" + theme + ".css")
-    setTheme()
-}
-else {}
 
+
+
+function isDarkMode() {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches == true){
+        themeSelector.value = 'dark'
+        let theme = themeSelector.value
+        themeLink.setAttribute("href", "theme-" + theme + ".css")
+        setTheme()
+    }
+    else {
+        themeSelector.value = 'light'
+        let theme = themeSelector.value
+        themeLink.setAttribute("href", "theme-" + theme + ".css")
+        setTheme()
+    }
+}
+isDarkMode();
+window.setInterval(isDarkMode ,2000);

@@ -21,7 +21,7 @@ html, body {
 }
 
 h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One';
     font-size: 50px;
     cursor: pointer;
     margin-left: 1%;
@@ -42,6 +42,9 @@ h5 {
     border: none;
     outline: none;
     background-color: white;
+}
+#themes {
+    display: none;
 }
 .info-row {
     height: auto;
@@ -68,7 +71,7 @@ svg {
 }
 svg:hover {
     cursor: pointer;
-    color: hotpink;
+    color: black;
     transform: rotate(360deg);;
 }
 .offcanvas-footer {
@@ -84,7 +87,9 @@ svg:hover {
 #menu:hover {
     cursor: pointer;
     transition: ease .5s;
-    color: #E76B74;
+    color: black;
     border-bottom: solid;
 }
-
+#myStats {
+    text-align: left;
+}
