@@ -104,23 +104,23 @@
             </div>
             <div class="offcanvas-body">
                 <div class="contactForm col-12">
-                    <form id="my-form-id" method="post" action="https://api.formcake.com/api/form/f661e74a-31dc-4ed3-8644-b423afc9ce06/submission">
+                    <form id="contactForm" method="post" action="https://api.formcake.com/api/form/f661e74a-31dc-4ed3-8644-b423afc9ce06/submission">
                         <div class="fields">
                             <div class="col-xs-12">
                                 <label for="inputEmail" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="inputEmail">
+                                <input type="text" class="form-control" aria-required="true" required id="inputEmail">
                             </div>
                             <div class="col-xs-12">
                                 <label for="inputSubject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="inputSubject">
+                                <input type="text" class="form-control" aria-required="true" required id="inputSubject">
                             </div>
                             <div class="col-xs-12">
                                 <label for="inputMessage" class="form-label">Message</label>
-                                <input style="height: 10vh;" type="text" class="form-control" id="inputMessage">
+                                <input style="height: 10vh;" type="text" class="form-control" aria-required="true" required id="inputMessage">
                             </div>
                             <div class="col-xs-12">
                                 <label for="Submit" class="form-label">Submit</label>
-                                <button type="submit" class="form-control btn btn-outline-secondary" id="Submit">Send</button>
+                                <button type="submit" class="form-control btn btn-outline-secondary" aria-required="true" required id="Submit">Send</button>
                             </div>
                         </div>
                     </form>

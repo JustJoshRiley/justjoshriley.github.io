@@ -135,7 +135,7 @@ input[type="text"], textarea {
 }
 
 .btn-outline-secondary:hover{
-    background-color: #E76B74;
-    border-color: #E76B74;
-    color: #000000;
+    /* background-color: #E76B74; */
+    /* border-color: #E76B74; */
+    /* color: #000000; */
 }

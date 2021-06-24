@@ -86,7 +86,7 @@ svg:hover {
 }
 #menu:hover {
     cursor: pointer;
-    transition: ease .5s;
+    transition: ease .2s;
     color: black;
     border-bottom: solid;
 }
