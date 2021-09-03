@@ -2,70 +2,21 @@
 let myInfo = new TypeIt('#myStats', {
     speed: 50
 })
-.type('Hello there!')
+
+.type('Hiya! I\'m Josh.')
+.pause(1000)
 .break()
 .break()
-.type('My name is Joshua Riley. I\'m a <em> Computer Science </em>student at <em>Make School</em> in San Francisco.')
+.type('I\'m a <em> Computer Science </em>student located in San Francisco.')
+.pause(500)
 .break()
 .break()
-.type('Welcome to my portfolio: my playground of interactions, features, and work that I have accomplished.')
+.type('Welcome to my portfolio - my playground of interactions, features, and work that I have accomplished.')
 .break()
 .break()
-.type('Click around and be curious, I hope something here inspires you.')
-.break()
-.break()
-.type('- J.W.R')
+.type('I hope I can <em>inspire</em> you.')
 .go();
 
-// KeyBoard Events
-// body.addEventListener('keydown', (event) => {
-//     console.log(event.key);
-//     if (event.key == "j" || event.key == "J") {
-//        const J = document.getElementsByClassName('menuj')[0];
-//        J.click();
-//     }
-//     else if (event.key == 'w' || event.key == 'W') {
-//         const W = document.getElementsByClassName('menuw')[0];
-//         W.click();
-//     }
-//     else if (event.key == 'r' || event.key == 'R') {
-//         const R = document.getElementsByClassName('menur')[0];
-//         R.click();
-//     }
-//     else {
-        
-//     }
-
-
-// })
-
-const themeSelector = document.querySelector("#themes");
-const themeLink = document.querySelector(".theme");
-
-function setTheme() {
-    let theme = themeSelector.value;
-    themeLink.setAttribute("href", "theme-" + theme + ".css");
-}
-
-themeSelector.addEventListener("change", () => {
-    setTheme();
-});
-
-// setTheme();
-
-function isDarkMode() {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches == true){
-        themeSelector.value = 'dark'
-        let theme = themeSelector.value
-        themeLink.setAttribute("href", "theme-" + theme + ".css")
-        setTheme()
-    }
-    else {
-        themeSelector.value = 'light'
-        let theme = themeSelector.value
-        themeLink.setAttribute("href", "theme-" + theme + ".css")
-        setTheme()
-    }
-}
-window.setInterval(isDarkMode , 1000);
-
+function fadeContact() {
+    document.getElementById('ContactTitle').className = "classname"
+} 

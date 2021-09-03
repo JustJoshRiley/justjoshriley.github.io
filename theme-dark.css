@@ -29,51 +29,21 @@ h1 {
     margin-right: 1%;
     color: white;
 }
-h5 {
-    color: white;
-}
 h6 {
     position: relative;
     margin-top: 4%;
     margin-bottom: 0;
     color: white;
 }
+h5 {
+    margin-left: -1%;
+    color: white;
+}
 .navigation-secret {
     display: none;
 }
-select option {
-    color: hotpink;
-    background-color: #E76B74;
-}
 #themes {
-    outline: none;
-    background-color: #E76B74;
     display: none;
-}
-.modal-header h6 {
-    padding-bottom: 4%;
-    margin-right: 5%;
-}
-.btn-close {
-    background-color: white;
-}
-span {
-    color: rgb(177, 177, 177);
-    font-weight: 700;
-
-}
-.modal-content {
-    background-color: #000000;
-}
-.offcanvas {
-    background-color: #000000;
-}
-.offcanvas-footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 2.5%;
-    padding-right: 2.5%;
 }
 .info-row {
     height: auto;
@@ -102,6 +72,16 @@ svg:hover {
     color: white;
     transform: rotate(360deg);
 }
+.offcanvas {
+    background-color: #000000;
+}
+.offcanvas-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2.5%;
+    padding-right: 2.5%;
+}
 #menu {
     font-size: 10vh;
 }
@@ -111,6 +91,22 @@ svg:hover {
     color: white;
     border-bottom: solid;
 }
+.modal-header h6 {
+    padding-bottom: 4%;
+    margin-right: 5%;
+}
+.btn-close {
+    background-color: white;
+}
+span {
+    color: rgb(177, 177, 177);
+    font-weight: 700;
+
+}
+.modal-content {
+    background-color: #000000;
+}
+
 
 .contactForm {
     padding-left: 2.5%;

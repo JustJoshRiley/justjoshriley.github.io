@@ -1,11 +1,59 @@
-.navigation {
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
 }
-.navigation-secret {
-    display: block;
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-family: 'Fredoka One';
+    font-size: 50px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+h6 {
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+h5 {
+    margin-left: -1%;
+}
+.navigation-secret {
+    display: none;
+}
+.themes {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+#themes {
+    display: none;
+}
+.info-row {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.col {
+    text-align: center;
 }
