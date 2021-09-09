@@ -44,13 +44,12 @@ nav{
 
 }
 .introRow {
-    height: 75%;
     min-height: fit-content;
     width: 50%;
     color: #686767;
     border: solid #686767;
     padding: 5%;
-    overflow: hidden;
+    
 
     -webkit-box-shadow: 0px 10px 26px -7px #686767, 5px 5px 15px 5px rgba(104,103,103,0); 
     box-shadow: 0px 10px 26px -7px #686767, 5px 5px 15px 5px rgba(104,103,103,0);
