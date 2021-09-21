@@ -11,7 +11,7 @@ let myInfo = new TypeIt('#myStats', {
 .pause(500)
 .break()
 .break()
-.type('Welcome to my portfolio - my playground of interactions, features, and work that I have accomplished.')
+.type('Welcome to my portfolio.')
 .break()
 .break()
 .type('I hope I can <em>inspire</em> you.')
