@@ -162,3 +162,33 @@ svg:hover {
     color: #bbbbbb;
     transform: rotate(360deg);
 }
+
+
+@media (max-width: 480px) {
+
+    body{
+        background-color: black;
+        overflow: scroll!important;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .introRow{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .workRow {
+        width: 100%;
+        margin-top: 35%;
+
+    }
+
+    .contactRow {
+        width: 100%;
+        margin-top: 10%;
+
+    }
+}
