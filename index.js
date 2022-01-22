@@ -17,6 +17,41 @@ let myInfo = new TypeIt('#myStats', {
 .type('I hope I can <em>inspire</em> you.')
 .go();
 
-function fadeContact() {
-    document.getElementById('ContactTitle').className = "classname"
-} 
+
+
+const O = document.getElementById('HeaderO').addEventListener("click", HeaderOClicked)
+
+function FadePage() {
+    document.getElementById('Header').style.opacity = "0";
+    document.getElementById('Header').style.transition = "2s linear"
+    document.getElementById('Header2').style.opacity = "0";
+    document.getElementById('Header2').style.transition = "2s linear"
+    document.getElementById('Social-Nav').style.opacity = "0"
+    document.getElementById('Social-Nav').style.transition = "2s linear"
+    document.getElementById('Navigation').style.opacity = "0"
+    document.getElementById('Navigation').style.transition = "2s linear"
+}
+
+function OCLicked() {
+    window.location ="./about-me/about-me.html";
+}
+function RouteToFunPage() {
+    FadePage();
+
+    const OElement = document.querySelector('.Intro-Header-o');
+    OElement.classList.add('animate__animated', 'animate__bounce');
+    OElement.style.setProperty('--animate-duration', '2s');
+
+    
+
+    OElement.addEventListener('animationend', () => {
+        OCLicked();
+    });
+    
+}
+
+
+// element.addEventListener("click", function(e){
+//     element.classList.remove("anim");
+//     setTimeout(() => element.classList.add("anim"), 0);
+// }, false);

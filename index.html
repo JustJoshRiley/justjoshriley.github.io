@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Josh Riley</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/square.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="./styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link href="./theme-light.css" rel="stylesheet">
+    <!-- Animate.Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 </head>
     <body>
-        <nav>
-            <h5><a href="#Home">Home.</a></h5>
-            <h5><a href="#Work">Work.</a></h5>
-            <h5><a href="#Contact" onclick="fadeContact()">Contact.</a></h5>
-        </nav>
-        <div id="Home" class="intro container-fluid">
-            <div class="introRow row">
-                <h1><span id="myStats"></span></h1>
+        <nav id="Navigation">
+            <div class="Nav-Left">
+                <a href="index.html" class="NavLink">JR</a>
             </div>
-        </div>
-        <div id="Work" class="intro container-fluid">
-            <div class="workRow row">
-                <div class="workwork">
-                    <div class="projectsNav">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Hoya</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tea</button>
-                            <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
-                        </div>
-                    </div>
-                      <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Coming Soon...</div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Coming Soon...</div>
-                        <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">contact</div> -->
-                      </div>
+            <div class="Nav-Right">
+                <a href="#AboutProf" class="NavLink">ABOUT.</a>
+                <a class="NavLink">PROJECTS.</a>
+            </div>
+        </nav>
+        <div class="Intro-Container">
+            <div class="Intro-Content">
+                <div id="Intro-Header" class="Intro-Header">
+                    <h4 id="Header">Hiya, I'm  J</h4><a id="HeaderO" onClick="RouteToFunPage()" class="Intro-Header-o">o</a><h4 id="Header2">sh.</h4>
                 </div>
             </div>
         </div>
-        </div>
-        <div id="Contact" class="intro container-fluid">
+        <!-- <div id="Contact" class="intro container-fluid">
             <div class="contactRow row">
                 <h1 id="ContactTitle">Connect with Me.</h1>
                 <form id="contactForm" method="post" action="https://api.formcake.com/api/form/f661e74a-31dc-4ed3-8644-b423afc9ce06/submission">
@@ -82,10 +74,40 @@
                     </a>
                 </div>
             </div>
+        </div> -->
+        <a id="AboutProf">
+            <div class="About-Container">
+                <div class="About-Container-Box">
+                    <div class="Left-Side">
+                        <div class="LS-Info-Top">
+                            <img src="./images/ProfileImage.png">
+                            <h1>Joshua W. Riley</h1>
+                        </div>
+                        <div class="LS-Info-Mid">
+                            Mid
+                        </div>
+                        <div class="LS-Info-Footer">
+                            Footer
+                        </div>
+                    </div>
+                    <div class="Right-Side">
+                        right
+                    </div>
+                </div>
+            </div>
+
+        </a>
+        <div id="Social-Nav" class="Social-Nav">
+            <a href="https://www.linkedin.com/in/joshua-william-riley/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffc0cb"><path d="M30.96,13.76c-9.45834,0 -17.2,7.74166 -17.2,17.2v110.08c0,9.45834 7.74166,17.2 17.2,17.2h110.08c9.45834,0 17.2,-7.74166 17.2,-17.2v-110.08c0,-9.45834 -7.74166,-17.2 -17.2,-17.2zM30.96,20.64h110.08c5.73958,0 10.32,4.58042 10.32,10.32v110.08c0,5.73958 -4.58042,10.32 -10.32,10.32h-110.08c-5.73958,0 -10.32,-4.58042 -10.32,-10.32v-110.08c0,-5.73958 4.58042,-10.32 10.32,-10.32zM48.16,37.88031c-3.76756,0 -7.15789,1.12612 -9.66828,3.23844c-2.5104,2.11232 -4.0514,5.26797 -4.0514,8.64703c0,6.4231 5.57131,11.43047 12.65812,11.92578c0.00447,0.00225 0.00895,0.00449 0.01344,0.00672c0.33769,0.1151 0.6914,0.17632 1.04813,0.1814c7.81915,0 13.71969,-5.47716 13.71969,-12.1139c-0.00062,-0.06052 -0.00286,-0.12101 -0.00672,-0.18141c-0.35002,-6.53679 -6.17784,-11.70406 -13.71297,-11.70406zM48.16,44.67969c4.78927,0 6.68038,2.13884 6.88672,5.17344c-0.0418,2.94549 -1.86401,5.22719 -6.88672,5.22719c-4.7658,0 -6.92031,-2.44066 -6.92031,-5.31453c0,-1.43694 0.52433,-2.5198 1.62594,-3.44672c1.1016,-0.92692 2.86993,-1.63938 5.29437,-1.63938zM37.84,65.36c-1.89978,0.00019 -3.43981,1.54022 -3.44,3.44v65.36c0.00019,1.89978 1.54022,3.43981 3.44,3.44h20.64c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-20.1764v-45.1836c-0.00019,-1.89978 -1.54022,-3.43981 -3.44,-3.44zM68.8,65.36c-1.89978,0.00019 -3.43981,1.54022 -3.44,3.44v65.36c0.00019,1.89978 1.54022,3.43981 3.44,3.44h20.64c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-34.4c0,-2.85405 0.7788,-5.69308 2.15,-7.55187c1.3712,-1.8588 3.10104,-2.97433 6.38953,-2.91594c3.39096,0.05831 5.18606,1.21995 6.54406,3.0436c1.358,1.82364 2.1164,4.55755 2.1164,7.42422v34.4c0.00019,1.89978 1.54022,3.43981 3.44,3.44h20.64c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-36.93969c0,-10.18769 -3.01761,-18.25742 -8.19015,-23.71719c-5.17255,-5.45978 -12.36669,-8.14313 -19.97485,-8.14313c-7.23094,0 -12.73367,2.42482 -16.555,4.89797v-1.45797c-0.00019,-1.89978 -1.54022,-3.43981 -3.44,-3.44zM41.28,72.24h13.76v41.7436v16.7364h-13.76zM72.24,72.24h13.76v5.36828c0.00044,1.47922 0.94637,2.79257 2.34922,3.26171c1.40285,0.46914 2.94855,-0.01097 3.83874,-1.19234c0,0 5.40206,-7.43765 17.24703,-7.43765c6.03145,0 11.20362,2.00408 14.98281,5.99313c3.77919,3.98904 6.30219,10.13448 6.30219,18.98719v33.49969h-13.76v-30.96c0,-4.01333 -0.96159,-8.16275 -3.4736,-11.5361c-2.512,-3.37334 -6.7369,-5.72212 -11.94594,-5.81172c-5.23583,-0.09298 -9.529,2.30465 -12.04672,5.71766c-2.51772,3.413 -3.49375,7.60421 -3.49375,11.63015v30.96h-13.76z"></path></g></g></svg>
+            </a>
+            <a href="https://github.com/JustJoshRiley" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffc0cb"><path d="M61.20104,161.11584c2.44584,-1.05264 4.15896,-3.48472 4.15896,-6.31584v-18.576c0,-0.67768 0.05504,-1.38288 0.14104,-2.0984c-0.04816,0.01376 -0.09288,0.02408 -0.14104,0.0344c0,0 -10.32,0 -12.384,0c-5.16,0 -9.632,-2.064 -11.696,-6.192c-2.408,-4.472 -3.44,-12.04 -9.632,-16.168c-1.032,-0.688 -0.344,-1.72 1.72,-1.72c2.064,0.344 6.536,3.096 9.288,6.88c3.096,3.784 6.192,6.88 11.696,6.88c8.55528,0 13.1408,-0.43 15.89968,-1.9092c3.21296,-4.77816 7.66088,-8.4108 12.30832,-8.4108v-0.086c-19.49792,-0.62608 -31.95416,-7.10704 -37.754,-17.114c-12.6076,0.14448 -23.58464,1.3932 -29.84888,2.43208c-0.19952,-1.12488 -0.37152,-2.25664 -0.51944,-3.39528c6.18168,-1.01824 16.65992,-2.22568 28.7068,-2.45616c-0.38528,-0.94944 -0.71896,-1.92296 -1.00104,-2.92056c-12.07784,-0.61232 -22.50104,-0.13416 -28.16328,0.33368c-0.0688,-1.14208 -0.16168,-2.28072 -0.17544,-3.43656c5.67256,-0.4644 15.81368,-0.9288 27.58192,-0.38184c-0.27176,-1.72 -0.4472,-3.47784 -0.4472,-5.30792c0,-5.848 2.064,-12.04 5.848,-17.2c-1.72,-5.848 -4.128,-18.232 0.688,-22.704c9.288,0 15.824,4.472 18.92,7.224c5.84456,-2.41144 12.38056,-3.78744 19.60456,-3.78744c7.224,0 13.76,1.376 19.264,3.784c3.096,-2.752 9.632,-7.224 18.92,-7.224c5.16,4.816 2.408,17.2 0.688,22.704c3.784,5.16 5.848,11.008 5.504,17.2c0,1.66496 -0.1548,3.27144 -0.3784,4.84696c12.03656,-0.59168 22.45288,-0.11696 28.22176,0.35088c-0.00688,1.15928 -0.11352,2.29104 -0.17544,3.43656c-5.74824,-0.47472 -16.426,-0.9632 -28.75496,-0.30616c-0.30616,1.15584 -0.67768,2.28072 -1.118,3.3712c12.19824,0.15824 22.9276,1.33816 29.40512,2.37016c-0.14792,1.14208 -0.31992,2.27384 -0.51944,3.39528c-6.57728,-1.05264 -17.78824,-2.28416 -30.54376,-2.34608c-5.7276,9.90032 -17.9568,16.3572 -37.07288,17.11056v0.10664c8.944,0 17.2,13.416 17.2,22.704v18.576c0,2.83112 1.71312,5.2632 4.15896,6.31584c31.51384,-10.43008 54.32104,-40.15168 54.32104,-75.11584c0,-43.62608 -35.49048,-79.12 -79.12,-79.12c-43.62952,0 -79.12,35.49392 -79.12,79.12c0,34.96416 22.8072,64.68576 54.32104,75.11584z"></path></g></g></svg>
+            </a>
+            <a href="mailto:joshriley316@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffc0cb"><path d="M18.92,24.08c-8.4925,0 -15.43969,6.93375 -15.48,15.42625c0,0 0,0.01344 0,0.02688c0,0.01344 0,0.01344 0,0.02687v92.88c0,8.50594 6.97406,15.48 15.48,15.48h134.16c8.50594,0 15.48,-6.97406 15.48,-15.48v-92.88c0,-0.01344 0,-0.01344 0,-0.02687c0,-0.01344 0,-0.02688 0,-0.02688c-0.04031,-8.4925 -6.9875,-15.42625 -15.48,-15.42625zM27.86938,30.96h116.27469l-58.14406,40.5275zM16.42063,31.36313l69.57937,48.50937l69.59281,-48.50937c3.52062,1.06156 6.06031,4.25969 6.08719,8.15656c-0.01344,0.72563 -0.7525,2.17688 -1.8275,3.34594c-1.08844,1.1825 -2.15,1.92156 -2.15,1.92156l-0.01344,0.02688l-71.68906,50.74l-71.68906,-50.74l-0.01344,-0.02688c0,0 -1.06156,-0.73906 -2.15,-1.92156c-1.075,-1.16906 -1.81406,-2.62031 -1.8275,-3.34594c0.02688,-3.89687 2.56656,-7.095 6.10063,-8.15656zM10.32,50.40406l0.02688,0.02687l0.02687,0.01344v0.01344l10.26625,7.25625v83.32594h-1.72c-4.78375,0 -8.6,-3.81625 -8.6,-8.6zM161.68,50.40406v82.03594c0,4.78375 -3.81625,8.6 -8.6,8.6h-1.72v-83.32594l10.26625,-7.25625v-0.01344zM27.52,62.57844l58.48,41.3875l58.48,-41.3875v78.46156h-116.96z"></path></g></g></svg>
+            </a>
         </div>
     </body>
-    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </html>
