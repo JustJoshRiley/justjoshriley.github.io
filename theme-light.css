@@ -28,7 +28,7 @@ body {
     background-color: black;
     align-items: center;
     opacity: 1;
-    padding-left: 2.5%;
+    padding-left: 2.5vw;
 }
 
 .NavLink {
@@ -72,12 +72,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2.5%!important;
     overflow-x: hidden;
 }
 
 .Intro-Content {
-    width: 100%;
+    width: 95vw;
     height: 20%;
     text-align: center;
 }
