@@ -34,7 +34,7 @@ body {
 .NavLink {
     text-decoration: none;
     transition: .5s linear;
-    color: rgb(66, 66, 66);
+    color: #424242;
 }
 
 .NavLink:hover {
@@ -120,7 +120,7 @@ body {
 /* About Me Proffessional */
 .About-Container {
     height: 90vh;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -139,36 +139,180 @@ body {
 .Left-Side {
     width: 50%;
     height: 95%;
-    color: burlywood;
     display: flex;
     flex-direction: column;
 }
 
 .LS-Info-Top {
     width: 100%;
-    height: 50%;
+    height: 35%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 .LS-Info-Top img {
     width: auto;
-    height: 50%;
+    height: 90%;
     margin-bottom: -5%;
 }
-.LS-Info-Top h1 {
+
+.LS-Info-Mid {
+    height: 70%!important;
     width: 100%;
-    height: auto;
+    text-align: left;
+}
+
+.LS-Info-Mid-Header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    color: pink;
+}
+
+.LS-Info-Main {
+    width: 95%;
+    height: 100%!important;
+    color: #424242;
+}
+
+.LS-Info-Footer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Skills-Header {
+    width: 100%;
     text-align: center;
-    color: rgb(66, 66, 66);
+    color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}   
+
+.Skills-Container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+}   
+
+.Skills-Icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #424242;
 }
 
 .Right-Side {
     width: 50%;
     height: 95%;
-    border: solid blue
+    padding: 2.5%;
 }
+
+.RS-Header {
+    color: pink;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.RS-Header svg:hover {
+    cursor: pointer;
+}
+
+.RS-Header button {
+    background-color: transparent;
+    border: none;
+}
+.RS-Header button:hover {
+    border-bottom: 1px solid pink;
+}
+
+.RS-Content {
+    height: 90%;
+    width: 100%;
+    border: 1px solid #424242;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.timeline {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 0, auto;
+
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: .5vw;
+    background-color: pink;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+}
+
+.TC-Container {
+    width: 40%;
+    color: rgb(66, 66, 66);
+    position: relative;
+    padding: 2%;
+}
+
+.TC-Content h2{
+    color: pink;
+}
+
+.TC-Container h3 {
+    color: grey;
+}
+
+.TC-Container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 4px solid pink;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    position: relative;
+    left: 0%;
+}
+.left::after {
+    right: -15%;
+}
+
+.right {
+    position: relative;
+    left: 55%;
+}
+
+.right::after {
+    left: -10%;
+}
+
 
 .Social-Nav {
     display: flex;

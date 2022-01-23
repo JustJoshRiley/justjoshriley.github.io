@@ -1,20 +1,21 @@
-// Intro Typing animation
-let myInfo = new TypeIt('#myStats', {
-    speed: 50
+let myInfo = new TypeIt('#About-Me-Prof', {
+    speed: 25,
+    cursor : false,
+    waitUntilVisible: true
 })
-
-.type('Hiya! I\'m Josh.')
-.pause(1000)
+.type("Hey there! I'm Joshua Riley. I'm a <em> Computer Science </em> (nerd) at <em> Dominican University of California </em>.")
 .break()
 .break()
-.type('I\'m a <em> Computer Science </em>student located in San Francisco.')
-.pause(500)
+.type("I enjoy smooth animations, responsive minimal websites, and trying new things.")
 .break()
 .break()
-.type('Welcome to my portfolio.')
+.type("If you haven't guessed, this is my portfolio. Feel free to take a look around.")
 .break()
 .break()
-.type('I hope I can <em>inspire</em> you.')
+.type("And if you feel like it, tell me what you think!")
+.break()
+.break()
+.type('- JR')
 .go();
 
 
