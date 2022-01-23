@@ -29,6 +29,7 @@ body {
     align-items: center;
     opacity: 1;
     padding-left: 2.5vw;
+    z-index: 99;
 }
 
 .NavLink {
@@ -116,6 +117,8 @@ body {
     opacity: 1;
     transition: 2s linear;
 }
+
+
 
 /* About Me Proffessional */
 .About-Container {
@@ -246,6 +249,7 @@ body {
     border: 1px solid #424242;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 50;
 }
 
 .timeline {
@@ -331,9 +335,71 @@ body {
     text-decoration: none;
 }
 
-
-.About-Me-Container {
+/* Projects */
+.Projects-Container {
     height: 100vh;
-    width: 100vw;
-    background-color: pink;
+    width: 90vw;
+    padding-top: 2.5%;
+    padding-left: 2.5%;
+    margin-top: 10%;
+    color: pink;
+    justify-content: flex-start;
+}
+
+.Projects-Container-Box {
+    width: 100%;
+    height: 100%;
+    padding-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Projects-Header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Project-Box {
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 100px;
+}
+
+.Project {
+    width: 100%;
+    height: 100%;
+    color: #808080;
+}
+
+.Project-Main {
+    width: 100%;
+    height: 75%;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: .5;
+    transition: .25s linear;
+}
+.Project-Main:hover {
+    opacity: 1;
+    border-radius: 0;
+}
+
+.Project-Main img {
+    height: 100%;
+    width: 100%;
+}
+
+.Project-Footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
