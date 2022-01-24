@@ -485,7 +485,11 @@ body {
         width: 50%;
         height: auto;
     }
+    .LS-Info-Mid {
+        height: 100%;
+    }
     .Skills-Container {
+        height: fit-content;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
@@ -519,6 +523,11 @@ body {
         grid-template-columns: auto;
         grid-gap: 0px;
         height: 100%;
+    }
+
+    .right h2 {
+        padding-left: 0;
+        text-align: center;
     }
 
     .Social-Nav {
