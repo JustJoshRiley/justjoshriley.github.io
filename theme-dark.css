@@ -458,7 +458,14 @@ body {
     .Nav-Right {
         width: 80%;
     }
-
+    .Intro-Header {
+        width: 100%;
+    }
+    .Intro-Header-o {
+        margin: 0%;
+        padding: 0%;
+    }
+    
     .About-Container {
         height: 100%;
         width: 100%;
