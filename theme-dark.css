@@ -453,19 +453,22 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .Nav-Left {
-        width: 20%;
+        width: 10%;
     }
     .Nav-Right {
-        width: 80%;
+        width: 90%;
     }
     .Intro-Header {
+        display: flex;
+        justify-content: center;
         width: 100%;
+        font-size: 13vw!important;
     }
     .Intro-Header-o {
         margin: 0%;
         padding: 0%;
     }
-    
+
     .About-Container {
         height: 100%;
         width: 100%;
