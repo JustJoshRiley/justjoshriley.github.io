@@ -215,6 +215,18 @@ body {
     color: #424242;
 }
 
+.Skills-Icon svg g {
+    transition: .25s linear;
+}
+
+.Skills-Icon svg g:hover {
+    fill: pink;
+}
+
+.Skills-Icon svg:hover {
+    fill: pink;
+}
+
 .Right-Side {
     width: 50%;
     height: 95%;
@@ -324,23 +336,6 @@ body {
 }
 
 
-.Social-Nav {
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 2.5%;
-    opacity: 1;
-}
-
-.Social-Nav a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
 /* Projects */
 .Projects-Container {
     height: 100vh;
@@ -403,10 +398,45 @@ body {
     width: 100%;
 }
 
+.GH-Link svg g {
+    transition: .25s linear;
+}
+
+.GH-Link svg g:hover {
+    fill: pink;
+    cursor: pointer;
+}
+
 .Project-Footer {
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.Page-Footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Social-Nav {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2.5%;
+    opacity: 1;
+}
+
+.Social-Nav a {
+    cursor: pointer;
+    text-decoration: none;
 }

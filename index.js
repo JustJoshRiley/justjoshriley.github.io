@@ -18,7 +18,14 @@ let myInfo = new TypeIt('#About-Me-Prof', {
 .type('- JR')
 .go();
 
-
+/* If browser back button was used, flush cache */
+(function () {
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+			window.location.reload();
+		}
+	};
+})();
 
 const O = document.getElementById('HeaderO').addEventListener("click", HeaderOClicked)
 
