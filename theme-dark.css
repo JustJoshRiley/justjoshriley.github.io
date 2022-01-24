@@ -3,6 +3,7 @@ html {
     background-color: black;
     margin: 0;
     overflow-x: hidden;
+    padding: 0;
 }
 
 body {
@@ -88,7 +89,8 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 8em;
+    /* font-size: 8em; */
+    font-size: 10vw;
     font-weight: 900;
     letter-spacing: .25vw;
     color: rgb(66, 66, 66);
@@ -102,7 +104,8 @@ body {
     transition: .25s linear;
     background-color: transparent;
     border: none;
-    font-size: .90em;
+    /* font-size: .90em; */
+    font-size: 10vw;
     font-weight: 900;
     height: auto;
     width: auto;
@@ -335,6 +338,11 @@ body {
     left: -10%;
 }
 
+.right h2 {
+    padding-left: 2.5%;
+}
+
+
 
 /* Projects */
 .Projects-Container {
@@ -439,4 +447,188 @@ body {
 .Social-Nav a {
     cursor: pointer;
     text-decoration: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Nav-Left {
+        width: 20%;
+    }
+    .Nav-Right {
+        width: 60%;
+    }
+
+    .About-Container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .About-Container-Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Left-Side, .Right-Side {
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .LS-Info-Top {
+        width: 100%;
+    }
+    .LS-Info-Top img {
+        width: 50%;
+        height: auto;
+    }
+    .Skills-Container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+    .Skills-Icon svg {
+        width: 5vw;
+    }
+
+    .Right-Side {
+        padding: 0%;
+    }
+    .RS-Content {
+        height: 50vh;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .Projects-Container {
+        width: 95vw;
+        height: 100%;
+    }
+    .Projects-Container-Box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Project-Box {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        height: 100%;
+    }
+
+    .Social-Nav {
+        display: none;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) { 
+    #Navigation {
+        z-index: 99!important;
+    }
+
+    .Nav-Right {
+        width: 45%;
+    }
+
+    .Intro-Header-o {
+        z-index: 5!important;
+    }
+
+    .About-Container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .About-Container-Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Left-Side, .Right-Side {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .LS-Info-Top {
+        width: 100%;
+    }
+    .LS-Info-Top img {
+        width: 50%;
+        height: auto;
+    }
+    .Skills-Container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+    .Skills-Icon svg {
+        width: 5vw;
+    }
+
+    .Right-Side {
+        padding: 0%;
+    }
+    .RS-Content {
+        height: 50vh;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .Projects-Container {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .Projects-Container-Box {
+        width: 80%;
+    }
+    .Project-Box {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        height: 100%;
+    }
+
+    .Social-Nav {
+        display: none;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and(max-width: 992px) {
+    .Nav-Right {
+        width: 30%;
+    }
+    .LS-Info-Top img {
+        width: 30%;
+        height: auto;
+    }
+    .Social-Nav {
+        display: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Nav-Right {
+        width: 30%;
+    }
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
