@@ -452,6 +452,10 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+    }
+    
     .Nav-Left {
         width: 10%;
     }
