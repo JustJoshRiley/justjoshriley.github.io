@@ -1,3 +1,19 @@
+let subText = new TypeIt('#Intro-Subtext', {
+    speed: 50,
+    cursor : true,
+    waitUntilVisible: true,
+    // loop: true
+})
+.type("Engineer.")
+.pause(2000)
+// .delete(9)
+.type(" Student.")
+.pause(2000)
+// .delete(8)
+.type(" Minecraft Nerd.")
+.go();
+
+
 let myInfo = new TypeIt('#About-Me-Prof', {
     speed: 25,
     cursor : false,
