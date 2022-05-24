@@ -71,17 +71,16 @@ nav {
 
 .About-Me-Info-Container {
     height: 80%;
-    width: 95%;
+    width: 75%;
     background-color: pink;
     overflow: hidden;
     border-radius: 25px;
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
 }
 
 .About-Me-Left {
-    width: 75%;
+    width: 97%;
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -93,7 +92,7 @@ nav {
 /* Left Container */
 .Left-Container {
     height: 95%;
-    width: 95%;
+    width: 100%!important;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -119,7 +118,7 @@ nav {
     border-top-right-radius: 25px;
     border-bottom-left-radius:0px;
     border-bottom-right-radius: 0px;
-    animation: moveClouds 25s infinite;
+    animation: moveClouds 50s infinite;
     animation-timing-function: ease-in-out;
     background-color: skyblue;
     height: 50%;
@@ -174,7 +173,7 @@ nav {
 }
 
 .Cat-List {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -223,6 +222,11 @@ nav {
     padding-right: 1.5%;
 }
 
+.Left-Container-Footer-Container-Second-P {
+    width: 50%;
+    text-align: left;
+}
+
 /* Grass Footer */
 .Grass-Footer {
     width: 100%;
@@ -232,7 +236,7 @@ nav {
     background-repeat: repeat-x, repeat-x;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    animation: moveGrass 5s infinite;
+    animation: moveGrass 15s infinite;
     animation-timing-function: ease-in-out;
     position: relative;
     bottom: 0;
@@ -295,3 +299,44 @@ display: none;
     width: 100%;
     font-weight: 900;
 }
+
+/* @media screen and (max-width: 480px) {
+    .Nav-Left {
+        padding-left: 5%;
+    }
+    .LC-Header-Main {
+        height: 25vh;
+    }
+    .LC-Header-Main img {
+        width: 25vw;
+    }
+    .LC-Header-Main h1 {
+        width: 100vw;
+        text-align: center;
+    }
+    .LC-Header-Footer {
+        max-width: 100vw;
+        min-width: 75vw;
+        height: 15%;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .Cat-List {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+    }
+    #Cat-List-El {
+        display: none;
+    }
+    .Left-Container-Footer-Container-First-P {
+        display: none;
+    }
+    .Left-Container-Footer-Container-Second-P {
+        text-align: left;
+    }
+}
+ */

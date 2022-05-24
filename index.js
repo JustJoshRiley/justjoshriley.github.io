@@ -2,15 +2,14 @@ let subText = new TypeIt('#Intro-Subtext', {
     speed: 50,
     cursor : true,
     waitUntilVisible: true,
-    // loop: true
 })
-.type("Engineer.")
-.pause(2000)
+.type("Software Engineer,")
+// .pause(500)
 // .delete(9)
-.type(" Student.")
-.pause(2000)
+.type(" C.S. Student.")
+// .pause(600)
 // .delete(8)
-.type(" Minecraft Nerd.")
+// .type(" Nerd.")
 .go();
 
 
@@ -54,6 +53,8 @@ function FadePage() {
     document.getElementById('Social-Nav').style.transition = "2s linear"
     document.getElementById('Navigation').style.opacity = "0"
     document.getElementById('Navigation').style.transition = "2s linear"
+    document.getElementById('Intro-Subtext').style.opacity = "0"
+    document.getElementById('Intro-Subtext').style.transition = "1.75s linear"
 }
 
 function OCLicked() {
