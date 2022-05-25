@@ -18,7 +18,7 @@ let myInfo = new TypeIt('#About-Me-Prof', {
     cursor : false,
     waitUntilVisible: true
 })
-.type("Hey there! I'm Joshua Riley. I'm a <em> Computer Science </em> (nerd) at <em> Dominican University of California </em>")
+.type("My name is Joshua Riley. I'm a <em> Computer Science </em> (nerd) at <em> Dominican University of California </em>")
 .break()
 .break()
 .type("I enjoy smooth animations, responsive minimal websites, and trying new things.")
