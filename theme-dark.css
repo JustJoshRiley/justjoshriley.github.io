@@ -406,6 +406,10 @@
         border-bottom: solid 1px pink;
         cursor: pointer;
     }
+
+    .Projects-Header a, .Projects-Header a:hover, .Projects-Header a:focus, .Projects-Header a:active {
+        text-decoration: none;
+    }
     
     .Project-Box {
         height: 40%;
