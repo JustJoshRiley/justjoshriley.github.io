@@ -4,7 +4,7 @@ let subText = new TypeIt('#Intro-Subtext', {
     waitUntilVisible: true,
 })
 .type("Software Engineer,")
-.pause(250)
+.pause(500)
 // .delete(9)
 .type(" C.S. Student.")
 // .pause(600)

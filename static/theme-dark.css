@@ -9,6 +9,10 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
+    body {
+        background-color: black;
+    }
     
     html::-webkit-scrollbar {
         display: none;
@@ -191,7 +195,6 @@
     .LS-Info-Main {
         width: 95%;
         height: 100%!important;
-        /* color: #424242; */
         color: rgb(120, 120, 120);
     }
     
@@ -532,20 +535,28 @@
         }
         
         .Nav-Left {
-            width: 10%;
+            width: 20%;
         }
         .Nav-Right {
-            width: 90%;
+            width: 60%;
         }
         .Intro-Header {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             width: 100%;
-            font-size: 13vw!important;
+            font-size: 13vw;
         }
         .Intro-Header-o {
             margin: 0%;
             padding: 0%;
+            font-size: 13vw;
+        }
+        .Intro-Header-o:active {
+            transform: rotate(0deg);
+        }
+
+        #Intro-Subtext {
+            font-size: 4.5vw;
         }
     
         .About-Container {
@@ -569,13 +580,14 @@
         }
         .LS-Info-Top {
             width: 100%;
+            padding-top: 10%;
         }
         .LS-Info-Top img {
-            width: 50%;
+            width: 45%;
             height: auto;
         }
         .LS-Info-Mid {
-            height: 100%;
+            min-height: 45vh;
         }
         .Skills-Container {
             height: fit-content;
