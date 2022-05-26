@@ -285,6 +285,7 @@
         border: 1px solid #424242;
         overflow-x: hidden;
         overflow: hidden;
+        overflow-y: scroll;
         z-index: 50;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -593,7 +594,8 @@
             min-height: 45vh;
         }
         .LS-Info-Main {
-            min-height: 45vh;
+            min-height: 55vh;
+            max-height: 55vh;
         }
         #About-Me-Prof {
             font-size: 5vw;
