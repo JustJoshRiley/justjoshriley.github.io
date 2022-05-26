@@ -533,7 +533,9 @@
         html {
             overflow-x: hidden;
         }
-        
+        #Navigation {
+            font-size: 3vw;
+        }
         .Nav-Left {
             width: 20%;
         }
@@ -587,8 +589,16 @@
             height: auto;
         }
         .LS-Info-Mid {
+            font-size: 5vw;
             min-height: 45vh;
         }
+        .LS-Info-Main {
+            min-height: 45vh;
+        }
+        #About-Me-Prof {
+            font-size: 5vw;
+        }
+
         .Skills-Container {
             height: fit-content;
             display: grid;
@@ -597,6 +607,9 @@
         }
         .Skills-Icon svg {
             width: 5vw;
+        }
+        .Skills-Container:nth-child(3), .Skills-Container:nth-child(4), .Skills-Container:nth-child(5) {
+            display: none;
         }
     
         .Right-Side {
