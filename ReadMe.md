@@ -1,7 +1,7 @@
 # Portfolio Project
 
 [LIVE SITE](https://joshriley.tech).
-[DEMO HERE](https://drive.google.com/file/d/1Ljz6cZclCRw-4XozHdnxkU0LuefkTqz6/view).
+[DEMO HERE](https://drive.google.com/file/d/1Cv8dLEbGp4EpqueAsa_v-UzXf-2EKApn/view?usp=sharing).
 
 ![Porfolio Landing Page](LandingPage.png)
 ![Porfolio About Page](AboutPage.png)
