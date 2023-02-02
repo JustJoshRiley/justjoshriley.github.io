@@ -351,6 +351,7 @@
         padding-right: 2rem;
         border-radius: 15px;
         border: 1px solid #ffbad2;
+        margin-top: 10%;
         box-shadow:0 0 10px #ffbad2;
     }
 
@@ -512,31 +513,31 @@
         -webkit-transition: all 0.4s ease-in;
         transition: all 0.4s ease-in;
         -webkit-box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
-                box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+        box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
     }
 
     .PC .card:hover {
         -webkit-transform: translateY(-1.5rem);
-            -ms-transform: translateY(-1.5rem);
-                transform: translateY(-1.5rem);
+        -ms-transform: translateY(-1.5rem);
+        transform: translateY(-1.5rem);
         border: #ffbad2 0.2em solid;
         border-radius: 2.5rem 0 2.5rem 0;
     }
 
     .Cbtn {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+        width: 6.5em;
+        height: 2.3em;
+        margin: 0.5em;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 0.625em;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
     }
 
     .Cbtn:hover {
@@ -561,10 +562,6 @@
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
     }
-
-
-
-    
 
     .PC {
         display: flex;
@@ -621,7 +618,6 @@
     .Contact-Container {
         height: 70vh;background-color: ivory;
     }
-
 
     .Page-Footer-Box {
         width: 100vw;

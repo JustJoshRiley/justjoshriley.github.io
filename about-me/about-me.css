@@ -27,9 +27,10 @@ nav {
     color: rgb(66, 66, 66);
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: transparent;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    z-index: 99;
 }
 
 .NavLink {
@@ -61,7 +62,6 @@ nav {
 .About-Me-Container {
     height: 100vh;
     width: 100vw;
-    padding-top: 2%;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -70,30 +70,26 @@ nav {
 }
 
 .About-Me-Info-Container {
-    height: 80%;
-    width: 75%;
-    background-color: pink;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    border-radius: 25px;
     display: flex;
     justify-content: center;
 }
 
 .About-Me-Left {
-    width: 97%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
 }
 
 /* Left Container */
 .Left-Container {
-    height: 95%;
+    height: 100%;
     width: 100%!important;
-    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,10 +110,6 @@ nav {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius: 0px;
     animation: moveClouds 50s infinite;
     animation-timing-function: ease-in-out;
     background-color: skyblue;
@@ -187,8 +179,6 @@ nav {
 .Hills-Container {
     height: 50%;
     width: 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     background-image: url('../images/Hills.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,10 +212,106 @@ nav {
     padding-right: 1.5%;
 }
 
-.Left-Container-Footer-Container-Second-P {
-    width: 50%;
-    text-align: left;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Grass Footer */
 .Grass-Footer {
