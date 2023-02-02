@@ -698,9 +698,11 @@
         .Intro-Header-o:active {
             transform: rotate(0deg);
             text-decoration: none;
+            color: #424242;
         }
         .Intro-Header-o::after {
             text-decoration: none;
+            color: #424242;
         }
 
         #Intro-Subtext {
