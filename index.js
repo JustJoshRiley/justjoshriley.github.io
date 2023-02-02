@@ -1,27 +1,42 @@
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
+
+
+
+
 let subText = new TypeIt('#Intro-Subtext', {
     speed: 50,
     cursor : true,
     waitUntilVisible: true,
 })
-.type("Software Engineer,")
-.pause(500)
+.type("Software Engineer - ")
+.pause(1000)
 // .delete(9)
-.type(" C.S. Student.")
+.type("Photographer.")
 // .pause(600)
 // .delete(8)
 // .type(" Nerd.")
-.go();
+.go(500)
+.pause();
 
 
 let myInfo = new TypeIt('#About-Me-Prof', {
     speed: 25,
     cursor : false,
-    waitUntilVisible: true
+    waitUntilVisible: false
 })
-.type("My name is Joshua Riley. I'm a <em> Computer Science </em> (nerd) at <em> Dominican University of California </em>")
+.type("Hey there, I'm Josh. I'm a Software Engineer at EverTrue.")
 .break()
 .break()
-.type("I enjoy smooth animations, responsive minimal websites, and trying new things.")
+.type("I enjoy animations, transitions, and trying new things.")
 .break()
 .break()
 .type("If you haven't guessed, this is my portfolio. Feel free to take a look around.")
@@ -76,7 +91,9 @@ function RouteToFunPage() {
 }
 
 
+
 // element.addEventListener("click", function(e){
 //     element.classList.remove("anim");
 //     setTimeout(() => element.classList.add("anim"), 0);
 // }, false);
+
