@@ -11,9 +11,8 @@
         height: fit-content;
     }
 
-    html::-webkit-scrollbar {
+    body::-webkit-scrollbar {
         display: none;
-        
     }
     
     body {
@@ -22,6 +21,8 @@
         margin: 0;
         width: 100vw;
         overflow-x: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
     
     #About-Me-Animation-Div {
@@ -742,8 +743,7 @@
             height: 100vh!important;
         }
         .Technologies-Container {
-            display: flex;
-            flex-direction: column;
+            display: none;
         }
 
         .Resume-Container {
