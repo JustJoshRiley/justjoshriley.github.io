@@ -6,9 +6,9 @@ body {
 nav {
     width: 100vw;
     height: 10vh;
+    padding-left: 5%;
     position: fixed;
     font-weight: 900;
-    /* color: rgb(66, 66, 66); */
     display: flex;
     justify-content: space-between;
     background-color: transparent;

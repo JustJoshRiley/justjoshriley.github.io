@@ -1,0 +1,285 @@
+nav {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    font-weight: 900;
+    color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    z-index: 99;
+}
+
+.NavLink {
+    text-decoration: none;
+    transition: .5s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.NavLink:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.NavLink:active {
+    text-decoration: none;
+}
+
+.Nav-Left {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    margin-left: 2.5%;
+
+}
+
+.Box {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Box-Content {
+    --borderWidth: 3px;
+    background: #fff;
+    position: relative;
+    border-radius: var(--borderWidth);
+    height: fit-content;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Box-Content:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    -webkit-animation: animatedgradient 3s ease alternate infinite;
+            animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@-webkit-keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+.input {
+    max-width: 190px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    margin: 5px;
+    transition: .5s;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: rotate(90deg);
+    background-color: black;
+    color: #ffbad2;
+    font-size: 1.5rem;
+}
+
+.textarea {
+    max-width: 190px;
+    width: 40px;
+    min-height: 200px;
+    outline: none;
+    margin: 5px;
+    transition: .5s;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: rotate(90deg);
+    background-color: black;
+    color: #ffbad2;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    width: 150px;
+    transform: rotate(0);
+}
+
+textarea:focus {
+    width: 200px;
+    height: 200px;
+    transform: rotate(0);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltiptextarea {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 70%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip:hover .tooltiptextarea {
+    visibility: visible;
+    transition: 2s ease;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: 2s ease;
+}
+
+.btn {
+    min-width: 225px;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    body {
+        overflow: hidden;
+    }
+    .Box {
+        overflow: hidden;
+    }
+    .Box-Content {
+        width: 50%;
+        height: 50%;
+
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+    .Box {
+        overflow: hidden;
+    }
+    .Box-Content {
+        width: 100%;
+        height: 100%;
+
+    }
+}

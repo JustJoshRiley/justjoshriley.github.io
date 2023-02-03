@@ -60,7 +60,7 @@
     .NavLink {
         text-decoration: none;
         transition: .5s linear;
-        color: #424242;
+        color: rgb(122, 122, 122);
     }
     
     .NavLink:hover {
@@ -490,7 +490,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        z-index: 99;
+        z-index: 98;
     }
 
     .Projects-Content {
