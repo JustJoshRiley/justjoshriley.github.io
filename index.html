@@ -15,11 +15,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
-    <body>
+    
+        <div id="loading">
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    <div id="content" style="display: none;">
+
+        
         <!-- Navigation -->
         <nav id="Navigation">
             <div class="Nav-Left">
-                <a href="index.html" class="NavLink">JR</a>
+                <a href="index.html" class="NavLink">J.W.R</a>
             </div>
             <div class="Nav-Right">
                 <a href="#AboutProf" class="NavLink">Bio.</a>
@@ -218,7 +238,9 @@
                 </div>
             <!-- </div> -->
         </div>
+    </div>
     </body>
     <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
     <script src="./index.js"></script>
+    <script src="./contact/contact.js"></script>
     </html>

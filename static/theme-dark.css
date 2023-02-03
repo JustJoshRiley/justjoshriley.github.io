@@ -28,6 +28,44 @@
         -ms-overflow-style: none;  
         scrollbar-width: none;
     }
+
+    #loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    color: #ffbad2;
+    -webkit-text-stroke: 2px #ffbad2;
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
     
     #About-Me-Animation-Div {
         display: block;
@@ -322,8 +360,7 @@
     }
 
     .Technologies-Box {
-        height: 10vh;
-        margin-bottom: 5%;
+        height: 15vh;
     }
 
     .Technologies-Header {
@@ -521,7 +558,7 @@
         -ms-transform: translateY(-1.5rem);
         transform: translateY(-1.5rem);
         border: #ffbad2 0.2em solid;
-        border-radius: 2.5rem 0 2.5rem 0;
+        border-radius:  0, 0, 2.5rem 0;
     }
 
     .Cbtn {

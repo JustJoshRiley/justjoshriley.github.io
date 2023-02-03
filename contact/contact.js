@@ -16,8 +16,8 @@ const elts = {
 
 const texts = [
     "J",
-    "W",
-    "R",
+    "J.W",
+    "J.W.R",
 ];
 
 const morphTime = 1;
