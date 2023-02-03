@@ -14,43 +14,66 @@
     <link href="./contact.css" rel="stylesheet">
     <!-- Animate.Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    </style>
 
 </head>
     <body>
-        <nav>
-            <div class="Nav-Left">
-                <a href="../index.html" class="NavLink">JR</a>
+        <div id="loading">
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
             </div>
-        </nav>
-        <div class="Box">
-            <form class="Box-Content">
-                <h2>Contact Me.</h2>
-                <div class="Form">
-                    <div>
-                        <div class="tooltip">
-                            <span class="tooltiptext">First Name:</span>
-                            <input type="text" name="text" class="input">
-                        </div>
-                        <div class="tooltip">
-                            <span class="tooltiptext">Last Name:</span>
-                            <input type="text" name="text" class="input">
-                        </div>
-                        <div class="tooltip">
-                            <span class="tooltiptext">Email:</span>
-                            <input type="text" name="text" class="input">
-                        </div>
-                    </div>
-                    <div class="Message">
-                        <div class="tooltip">
-                            <span class="tooltiptextarea">Message:</span>
-                            <textarea class="textarea"></textarea>
-                        </div>
-                        <button class="btn">Submit</button>
-                    </div>
+
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+
+        <div id="content" style="display: none;">
+        <!-- Your content goes here -->
+            <nav>
+                <div class="Nav-Left">
+                    <a href="../index.html" class="NavLink">JR</a>
                 </div>
-            </form>
+            </nav>
+            <div class="Box">
+                <form class="Box-Content">
+                    <h2>Contact Me.</h2>
+                    <div class="Form">
+                        <div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">First Name:</span>
+                                <input type="text" name="text" class="input">
+                            </div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Last Name:</span>
+                                <input type="text" name="text" class="input">
+                            </div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Email:</span>
+                                <input type="text" name="text" class="input">
+                            </div>
+                        </div>
+                        <div class="Message">
+                            <div class="tooltip">
+                                <span class="tooltiptextarea">Message:</span>
+                                <textarea class="textarea"></textarea>
+                            </div>
+                            <button class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
-    <script src="./index.js"></script>
+    <script src="./contact.js"></script>
 </html>
