@@ -166,7 +166,6 @@ body {
     z-index: 99;
     margin-top: 0;
     top: 0;
-    mix-blend-mode: difference;
 }
 
 #Navigation:hover {
