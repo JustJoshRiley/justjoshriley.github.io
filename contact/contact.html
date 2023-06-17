@@ -17,7 +17,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
     </style>
-
 </head>
     <body>
         <div id="loading">
@@ -46,34 +45,35 @@
                 </div>
             </nav>
             <div class="Box">
-                <form class="Box-Content">
+                <form class="Box-Content" id="my-form-id" method="POST" action="https://api.formcake.com/api/form/f661e74a-31dc-4ed3-8644-b423afc9ce06/submission">
                     <h2>Contact Me.</h2>
                     <div class="Form">
                         <div>
                             <div class="tooltip">
                                 <span class="tooltiptext">First Name:</span>
-                                <input type="text" name="text" class="input">
+                                <input type="text" aria-required="true" required type="text" name="first_name" class="input">
                             </div>
                             <div class="tooltip">
                                 <span class="tooltiptext">Last Name:</span>
-                                <input type="text" name="text" class="input">
+                                <input type="text" aria-required="true" required type="text" name="last_name" class="input">
                             </div>
                             <div class="tooltip">
                                 <span class="tooltiptext">Email:</span>
-                                <input type="text" name="text" class="input">
+                                <input type="email" aria-required="true" required type="text" name="email" class="input">
                             </div>
                         </div>
                         <div class="Message">
                             <div class="tooltip">
                                 <span class="tooltiptextarea">Message:</span>
-                                <textarea class="textarea"></textarea>
+                                <textarea type="text" aria-required="true" required class="textarea"></textarea>
                             </div>
-                            <button class="btn">Submit</button>
+                            <button class="btn g-recaptcha" data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0" data-callback='onSubmit' data-action='submit' type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </body>
+    
     <script src="./contact.js"></script>
 </html>

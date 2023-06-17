@@ -76,7 +76,10 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    background: rgb(135,206,235);
+    background: linear-gradient(180deg, rgba(135,206,235,1) 47%, rgba(122,188,166,1) 51%, rgba(89,144,0,1) 55%);
 }
+
 
 .About-Me-Left {
     width: 100%;
@@ -113,7 +116,7 @@ nav {
     height: fit-content;
     animation: moveClouds 50s infinite;
     animation-timing-function: ease-in-out;
-    background-color: skyblue;
+    /* background-color: #87ceeb; */
     height: 50%;
     width: 100%;
     z-index: 99;
@@ -184,7 +187,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(89,144,0);
+    /* background-color: #599000; */
     display: flex;
     justify-content: center;
     flex-direction: column;

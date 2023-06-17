@@ -318,8 +318,8 @@ button:hover:after {
         overflow: hidden;
     }
     .Box-Content {
-        width: 50%;
-        height: 50%;
+        width: 75%;
+        height: fit-content;
 
     }
 }
@@ -334,12 +334,8 @@ button:hover:after {
         height: 10vh;
         padding-left: 10%;
     }
-    .Box {
-        /* overflow: hidden; */
-    }
     .Box-Content {
         width: 75%;
         height: fit-content;
-
     }
 }

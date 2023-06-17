@@ -9,21 +9,14 @@ function showPage() {
     document.getElementById("myDiv").style.display = "block";
 }
 
-
-
-
-let subText = new TypeIt('#Intro-Subtext', {
-    speed: 50,
+const subText = new TypeIt('#Intro-Subtext', {
+    // speed: 50,
     cursor : true,
     waitUntilVisible: true,
 })
-.type("Software Engineer - ")
-.pause(1000)
-// .delete(9)
-.type("Photographer.")
-// .pause(600)
-// .delete(8)
-// .type(" Nerd.")
+.type(`let Josh = [ Full_Stack_Software_Engineer`)
+.pause(5000)
+.type(`, Photographer ]`)
 .go(500)
 .pause();
 
@@ -57,7 +50,7 @@ let myInfo = new TypeIt('#About-Me-Prof', {
 	};
 })();
 
-const O = document.getElementById('HeaderO').addEventListener("click", HeaderOClicked)
+const O = document.getElementById('HeaderO').addEventListener("click", OCLicked)
 
 function FadePage() {
     document.getElementById('Header').style.opacity = "0";
@@ -77,23 +70,41 @@ function OCLicked() {
 }
 function RouteToFunPage() {
     FadePage();
-
     const OElement = document.querySelector('.Intro-Header-o');
     OElement.classList.add('animate__animated', 'animate__bounce');
     OElement.style.setProperty('--animate-duration', '2s');
-
-    
-
     OElement.addEventListener('animationend', () => {
         OCLicked();
     });
     
-}
+};
 
+function closeAboutElements() {
+    document.getElementById('AboutNav').style.display = "none"
+    document.getElementById('AboutNav').style.transition = "2s linear"
+    document.getElementById('About').style.display = "none"
+    document.getElementById('About').style.transition = "2s linear"
+};
 
+function CloseAboutSection() {
+    closeAboutElements();
+};
 
-// element.addEventListener("click", function(e){
-//     element.classList.remove("anim");
-//     setTimeout(() => element.classList.add("anim"), 0);
-// }, false);
+// function MinimizeAboutSection() {
+//     document.getElementById('AcardContentBox').style.height = "0px";
+//     document.getElementById('AcardContentBox').style.transition = "1s linear"
+// };
 
+// document.querySelector('body').addEventListener('mousemove', eyeball);
+//     function eyeball() {
+//     // let eye = new Array(document.getElementById('Intro-Header'));
+//     // eye.forEach(function (eye) {
+//     //     let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+//     //     let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+//     //     let radian = Math.atan2(event.pageX - x, event.pageY - y);
+//     //     let rotating = radian * (180 / Math.PI) * -1 + 270;
+//     //     eye.style.transform = `${rotating( + `${rotating}` + radian)}`;
+//     // });
+//     let eye = document.getElementById('Intro-Header')
+//     console.log(eye)
+// }
